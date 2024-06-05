@@ -40,7 +40,19 @@ h6{
     justify-content: space-between;
     list-style-type: none;
     pad: 16px;
+    
 }
+a {
+    color: rgb(132, 184, 197);
+    text-decoration: none;
+}
+nav a :hover{
+color: rgb(87, 221, 255);
+}
+
+
+
+
 /* .fundo {
     position: absolute;
     display: flex;
