@@ -1,8 +1,7 @@
 body {
     color: rgb(170, 170, 170);
     background-color: #08101d;
-    font-family: Arial, Helvetica, sans-serif;
-}
+    font-family: "Kanit", sans-serif;}
 
 .container {
     padding: 0px 50px;
@@ -42,4 +41,21 @@ h1 {
 .aviso {
     margin-top: 5px;
    
+}
+
+footer img {
+    width: 40px;
+    height: 40px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+
+}
+
+footer a {
+    margin: 12px;
+    text-align: center;
+
 }
