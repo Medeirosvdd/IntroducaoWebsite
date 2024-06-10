@@ -45,7 +45,6 @@ footer a {
     justify-content: space-between;
     list-style-type: none;
     pad: 16px;
-    
 }
 a {
     color: rgb(132, 184, 197);
@@ -54,8 +53,16 @@ a {
 nav a :hover{
 color: rgb(87, 221, 255);
 }
+.WhatsApp{
+    width: 20px;
+    height: 20px;
+}
+.sub{
+    color: rgb(81, 204, 128);
+}
 
-
-
+.conta{
+    list-style-type: none;
+}
 
 
