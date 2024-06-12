@@ -64,5 +64,12 @@ color: rgb(87, 221, 255);
 .conta{
     list-style-type: none;
 }
-
-
+.tt{
+    line-height: 1;
+}
+.Mnome{
+    color:  rgb(0, 231, 135);
+}
+.aa{
+    color: rgb(255, 233, 137);
+}
