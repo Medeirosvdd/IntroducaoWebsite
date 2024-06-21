@@ -281,6 +281,7 @@ footer a {
     color: red;
     padding: 0 5px 0 0;
   }
+  
   @media (max-width: 980px){
     nav .menu-icon,
     nav .cancel-icon,
@@ -336,7 +337,7 @@ footer a {
   .test2 {
     list-style-type: none;
   
-    height: 250px;
+    height: 270px;
     padding: 2px;
     background: #1e232b;
     min-width: 18% !important;
