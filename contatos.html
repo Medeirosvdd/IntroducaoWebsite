@@ -1,64 +1,101 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contatos</title>
-    <link rel="stylesheet" href="contato.css">
-</head>
-<body>
-    <div class="container">
-        <section id="home"></section>
+    <head>
+        <meta charset="utf-8">
+        <title>Contatos</title>
+        <link rel="stylesheet" href="contato.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    </head>
+    </head>
+    
+    <body>
         <header>
             <nav>
-                <ul class="navBar">
+                <div class="menu-icon">
+                    <span class="fas fa-bars"></span>
+                </div>
+                <div class="logo">
+                    Portfólio
+                </div>
+                <div class="nav-items">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="projetos.html">Projetos</a>
                     <li>
-                        <a href="index.html">Home</a>
-                    </li>
+                    <li><a href="contatos.html">Contatos</a>
                     <li>
-                        <a href="sobre.html">Sobre</a>
-                    </li>
-                    <li>
-                        <a href="projetos.html">Projetos </a>
-                    </li>
-                    <li>
-                        <a href="contatos.html">Contatos</a>
-                    </li>
-                </ul>
+                </div>
+                <div class="search-icon">
+                    <span class="fas fa-search"></span>
+                </div>
+                <div class="cancel-icon">
+                    <span class="fas fa-times"></span>
+                </div>
+    
             </nav>
+    
+    
+            <script>
+                const menuBtn = document.querySelector(".menu-icon span");
+                const searchBtn = document.querySelector(".search-icon");
+                const cancelBtn = document.querySelector(".cancel-icon");
+                const items = document.querySelector(".nav-items");
+                const form = document.querySelector("form");
+                menuBtn.onclick = () => {
+                    items.classList.add("active");
+                    menuBtn.classList.add("hide");
+                    searchBtn.classList.add("hide");
+                    cancelBtn.classList.add("show");
+                }
+                cancelBtn.onclick = () => {
+                    items.classList.remove("active");
+                    menuBtn.classList.remove("hide");
+                    searchBtn.classList.remove("hide");
+                    cancelBtn.classList.remove("show");
+                    form.classList.remove("active");
+                    cancelBtn.style.color = "#ff3d00";
+                }
+                searchBtn.onclick = () => {
+                    form.classList.add("active");
+                    searchBtn.classList.add("hide");
+                    cancelBtn.classList.add("show");
+                }
+            </script>
         </header>
         <hr>
+        <div class="container">
         <main>
                 <h3 class="sub">Contatos</h3>
                 <p>Fique à vontade para entrar em contato comigo através das seguintes plataformas:</p>
                 <ul class="conta">
-                    <li><img src="./img/WhatsApp logo.png" class="WhatsApp"> Telefone: (51) 99866-4408 </li>
-                    <li> <img src="./img/gmail logo.png" class="WhatsApp"> Email: medeirosmurilo589@gmail.com</a> </li>
-                    <li> <img src="./img/github logo branca.png" class="WhatsApp"> GitHub: <a
+                    <li><img src="./img/WhatsApp logo.png" class="mini"> Telefone: (51) 99866-4408 </li>
+                    <li> <img src="./img/gmail logo.png" class="mini"> Email: medeirosmurilo589@gmail.com</a> </li>
+                    <li> <img src="./img/github logo branca.png" class="mini"> GitHub: <a
                             href="https://github.com/Medeirosvdd">Medeirosvdd </a>
                     </li>
                     <li>
-                        <img src="./img/Instagram_icon.png.webp" class="WhatsApp"> Instagram: <a
+                        <img src="./img/Instagram_icon.png.webp" class="mini"> Instagram: <a
                             href="https://www.instagram.com/ft_medeiros/">ft_medeiros </a>
                     </li>
                 </ul>            
         </main>
         <hr>
         <footer>
+            <nav>
             <a href="https://github.com/Medeirosvdd" target="_blank" rel="noopener noreferrer">
                 <img src="./img/github logo branca.png">
-                <p></p>
             </a>
             <a href="https://www.instagram.com/ft_medeiros/" target="_blank" rel="noopener noreferrer">
                 <img src="./img/Instagram_icon.png.webp">
-                <p></p>
+               
             </a>
             <a href=" https://wa.me/qr/KQUIUQQICCDLF1 " target="_blank" rel="noopener noreferrer">
                 <img src="./img/WhatsApp logo.png">
-                <p></p>
+               
             </a>
-        </footer>
         </nav>
+        </footer>
         <h6 class="cop">© 2024 Medeiros, S.A</h6>
     </div>
 </body>

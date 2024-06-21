@@ -2,60 +2,108 @@
 <html lang="pt-BR">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link>
+    <meta charset="utf-8">
     <title>Home</title>
     <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+</head>
 </head>
 
 <body>
+    <header>
+        <nav>
+            <div class="menu-icon">
+                <span class="fas fa-bars"></span>
+            </div>
+            <div class="logo">
+                Portfólio
+            </div>
+            <div class="nav-items">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="projetos.html">Projetos</a>
+                <li>
+                <li><a href="contatos.html">Contatos</a>
+                <li>
+            </div>
+            <div class="search-icon">
+                <span class="fas fa-search"></span>
+            </div>
+            <div class="cancel-icon">
+                <span class="fas fa-times"></span>
+            </div>
+
+        </nav>
+
+
+        <script>
+            const menuBtn = document.querySelector(".menu-icon span");
+            const searchBtn = document.querySelector(".search-icon");
+            const cancelBtn = document.querySelector(".cancel-icon");
+            const items = document.querySelector(".nav-items");
+            const form = document.querySelector("form");
+            menuBtn.onclick = () => {
+                items.classList.add("active");
+                menuBtn.classList.add("hide");
+                searchBtn.classList.add("hide");
+                cancelBtn.classList.add("show");
+            }
+            cancelBtn.onclick = () => {
+                items.classList.remove("active");
+                menuBtn.classList.remove("hide");
+                searchBtn.classList.remove("hide");
+                cancelBtn.classList.remove("show");
+                form.classList.remove("active");
+                cancelBtn.style.color = "#ff3d00";
+            }
+            searchBtn.onclick = () => {
+                form.classList.add("active");
+                searchBtn.classList.add("hide");
+                cancelBtn.classList.add("show");
+            }
+        </script>
+    </header>
+    <hr>
     <div class="container">
-        <section id="home"></section>
-        <header>
-            <nav>
-                <ul class="navBar">
+        <main>
+            <div class="peinci">
+                <h1 class="bem">Bem-vindo ao Meu Portfólio!!</h1>
+                <h1 class="bem">👋</h1>
+                <p class="test">Olá! Meu nome é Murilo Medeiros e este é o meu portfólio online. Sou estudante de
+                    Tecnologia
+                    da Informação na Universidade Luterana do Brasil (Ulbra) e estou entusiasmado em compartilhar meus
+                    projetos e experiências com você.</p>
+
+                <h2 class="nem">Sobre Este Portfólio</h2>
+                <p class="test">Neste portfólio, você encontrará uma coleção dos meus trabalhos e informações sobre
+                    minha
+                    jornada na área de Tecnologia da Informação. Aqui está um resumo do que você pode explorar:</p>
+
+                <ul>
                     <li>
-                        <a href="index.html">Home</a>
+                        <p> Resumo Pessoal: Conheça mais sobre minha formação acadêmica, habilidades técnicas e
+                            objetivos de
+                            carreira;</p>
                     </li>
                     <li>
-                        <a href="sobre.html">Sobre</a>
+                        <p>Projetos Acadêmicos: Veja os projetos que desenvolvi durante o curso. Cada projeto vem com
+                            uma
+                            descrição detalhada;
+
+                        </p>
                     </li>
                     <li>
-                        <a href="projetos.html">Projetos </a>
-                    </li>
-                    <li>
-                        <a href="contatos.html">Contatos</a>
+                        <p>Contatos: Saiba como me encontrar. Disponibilizo meu telefone, email, GitHub e Instagram para
+                            que
+                            você possa entrar em contato comigo facilmente.</p>
                     </li>
                 </ul>
-            </nav>
-        </header>
-        <section id="home"></section>
-        <hr>
-        <main>
-            <h1 class="bem">Bem-vindo ao Meu Portfólio!!</h1>
-            <h1 class="bem">👋</h1>
-            <p class="test">Olá! Meu nome é Murilo Medeiros e este é o meu portfólio online. Sou estudante de Tecnologia da Informação na Universidade Luterana do Brasil (Ulbra) e estou entusiasmado em compartilhar meus projetos e experiências com você.</p>
-
-            <h2 class="nem">Sobre Este Portfólio</h2>
-            <p class="test">Neste portfólio, você encontrará uma coleção dos meus trabalhos e informações sobre minha jornada na área de Tecnologia da Informação. Aqui está um resumo do que você pode explorar:</p>
-
-            <ul>
-                <li>
-                   <p> Resumo Pessoal: Conheça mais sobre minha formação acadêmica, habilidades técnicas e objetivos de carreira.</p>
-                </li>
-                <li>
-                    <p>Projetos Acadêmicos: Veja os projetos que desenvolvi durante o curso. Cada projeto vem com uma descrição detalhada.
-
-                    </p>
-                </li>
-                <li>
-                    <p>Contatos: Saiba como me encontrar. Disponibilizo meu telefone, email, GitHub e Instagram para que você possa entrar em contato comigo facilmente.</p>
-                </li>
-            </ul>
-
+                <p class="test">Sinta-se à vontade para explorar cada seção e conhecer mais sobre meu trabalho e minhas
+                    conquistas. Espero que goste do que verá aqui. Se tiver qualquer dúvida ou quiser saber mais, não
+                    hesite
+                    em me contatar!</p>
+            </div>
         </main>
         <hr>
         <footer>
