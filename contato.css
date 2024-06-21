@@ -101,9 +101,21 @@ a {
 
 .sub{
     color: rgb(81, 204, 128);
+    text-align: center;
+}
+.ss{
+  text-align: center;
 }
 .conta{
     list-style-type: none;
+    
+    height: 128px;
+    padding: 2px;
+    background: #1e232b;
+    min-width: 18%!important;
+    border-radius: 30px;
+    border: 10px solid rgba(155,155,155,0.2);
+    text-align: center;
 }
 .mini{
     width: 20px;
@@ -273,4 +285,15 @@ footer a {
       font-size: 16px;
   }
   
+  .conta{
+    list-style-type: none;
+    
+    height: 158px;
+    padding: 2px;
+    background: #1e232b;
+    min-width: 18%!important;
+    border-radius: 30px;
+    border: 10px solid rgba(155,155,155,0.2);
+    text-align: center;
+}
   }
